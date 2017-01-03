@@ -1,0 +1,31 @@
+﻿@model NgCooking.Models.Recette
+
+
+
+<div class="col-xs-6 col-sm-3 recette">
+    @ViewBag.Error
+    @if (Model != null)
+    {
+        <a href="@Url.Action("Details", "Recettes", new { id = Model.id })">
+            @if (Model.picture != null && Model.picture != "")
+            {
+            <img src="~/Resources/recettes/@Model.picture" alt="@Model.name" />
+            }
+            else
+            {
+            <img src="~/Resources/recette_placeholder.jpg" , alt="@Model.name">
+            }
+            <div class="top" title="note :  @Model.average/5">
+                <span class="note">
+                    @for (int i = 1; i <= @Model.average; i++)
+                {
+                        <span class="glyphicon glyphicon-heart"></span>
+                    }
+                </span>
+            </div>
+            <div class="bot">
+                <p class="name">@Model.name </p>
+            </div>
+        </a>
+    }
+</div>

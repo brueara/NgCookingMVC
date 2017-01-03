@@ -1,0 +1,42 @@
+﻿@model NgCooking.ViewModels.CommunauteRecetteViewModel
+
+            @using (Html.BeginForm(null, null, FormMethod.Post, new { name = "formCreateCommentaire", id = "formCreateCommentaire" }))
+            {
+                @Html.AntiForgeryToken()
+
+
+                @Html.HiddenFor(model => model.recetteId);
+                @*@Html.HiddenFor(model => model.recette);*@
+                @Html.HiddenFor(model => model.communauteId);
+                @*@Html.HiddenFor(model => model.communaute);*@
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @ViewBag.Message
+                <div class="filter">
+                    <p><label for="">Notez cette recette</label></p>
+                    <p>
+                        @Html.DropDownListFor(model => Model.mark, Model.markPossible)
+
+                    </p>
+                </div>
+                        <div class="filter">
+                            <p><label for="">Le titre de votre commentaire</label></p>
+                            <p>
+                                @Html.EditorFor(model => model.title, new { htmlAttributes = new { @class = "form-control", placeholder = "ex: Amazingue !" } })
+                                @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+                            </p>
+                        </div>
+                        <div class="filter">
+                            <p><label for="">Votre commentaire</label></p>
+                            <p>
+                                @Html.TextAreaFor(model => model.comment, new { @class = "wide", placeholder = "ex: Franchement cette NgRecette, c’est de la bombe. Le genre de saveurs qui t’éveillent les papilles, t’as vu ! Woula, j’ai kiffé" })
+                                @Html.ValidationMessageFor(model => model.comment, "", new { @class = "text-danger" })
+                            </p>
+
+                        </div>
+                        <div class="ar">
+                            <input type="button" id="addComment" class="btn btn_color1" value="Poster !">
+                        </div>
+
+
+            }
+

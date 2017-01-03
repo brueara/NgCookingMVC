@@ -1,0 +1,31 @@
+﻿@model NgCooking.Models.Ingredient
+
+@{
+    ViewBag.Title = "Détails de l'ingrédient";
+}
+
+<div class="content" id="content_recettes_details">
+
+    <section class="section">
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="item-img ingredient_img" src="~/Resources/ingredients/@Model.picture" alt="@Model.id">
+            </div>
+                <div class="col-xs-8">
+                    <h1 class="rec_name">@Model.name</h1>
+                    <p class="rec_cal">Catégorie : <span class="val">@Model.category.nameToDisplay</span></p>
+                    <p class="rec_cal">Valeur calorique <span class="for">(100g)</span> : <span class="val">@Model.calories kcal</span></p>
+                </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="overline-title"><span class="text">Description</span></h2>
+            </div>
+            <div class="col-xs-12">
+                <p>@Model.description</p>
+            </div>
+        </div>
+    </section>
+</div> 

@@ -1,0 +1,208 @@
+﻿@model NgCooking.ViewModels.DetailsRecettesViewModel
+@using System.Text.RegularExpressions;
+@{
+    ViewBag.Title = "Détails de la recette";
+    string userName = HttpContext.Current.User.Identity.Name;
+}
+
+<div class="content" id="content_recettes_details">
+
+    <section class="section">
+        <div class="row">
+            <div class="col-xs-4">
+                @if (Model.LaRecette.picture != null && Model.LaRecette.picture != "")
+            {
+                    <img class="recette_img" src="~/Resources/recettes/@Model.LaRecette.picture" alt="@Model.LaRecette.id" />
+                }
+                else
+                {
+                    <img class="recette_img" src="~/Resources/recette_placeholder.jpg" , alt="@Model.LaRecette.name">
+                }
+            </div>
+            <div class="col-xs-8">
+                <h1 class="rec_name">@Model.LaRecette.name</h1>
+                <p class="rec_note">
+                    <span class="stars">
+                        @for (int i = 0; i < Model.LaRecette.average; i++)
+                        {
+                            <span class="star glyphicon glyphicon-heart"></span>
+
+                        }
+                    </span>
+                    <span class="notes">| @Model.LaRecette.average/5 - @Model.LesCommentaires.Count() votes</span>
+                </p>
+                <div class="ingredients_list">
+                    <p class="list-title">Ingrédients</p>
+                    <ul class="list">
+                        @foreach (var item in Model.LesIngredients)
+                        {
+                            <li class="item">
+                                <a href="@Url.Action("Details", "Ingredients", new { id = item.id })">
+                                    <img class="item-img" src="~/Resources/ingredients/@item.picture" alt="@item.id">
+                                </a>
+                                <p class="item-name" title="@item.id">@item.name</p>
+                            </li>
+                        }
+                    </ul>
+                </div>
+                <p class="rec_cal">Valeur calorique <span class="for">(100g)</span> : <span class="val">@Model.LaRecette.calories kcal</span></p>
+            </div>
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="overline-title"><span class="text">Préparation</span></h2>
+            </div>
+            <div class="col-xs-12">
+                @foreach(string ligne in Regex.Split(@Model.LaRecette.preparation,"<br />"))
+                {
+                    <p>@ligne.Trim()</p>
+                }
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="overline-title"><span class="text">Commentaires</span></h2>
+            </div>
+            @if (userName != null && userName.Trim() != "" && userName != Model.LaRecette.ChiefId.ToString() || userName == null || userName.Trim() == "")
+            {
+                <div class="col-xs-12 col-sm-6">
+                    <div class="panel">
+                        <div class="filters">
+                            <h3 class="panel_title">Donnez-nous votre avis !</h3>
+                            @if (userName != null && userName.Trim() != "")
+                            {
+                                @Html.Action("Commentaire", "CommunautesRecettes", new { id = Model.LaRecette.id })
+                            }
+                            else
+                            {
+                                <div class="row showmore">
+                                    <p>Pour cela</p>
+                                </div>
+                                <div class="row showmore">
+                                    <div class="col-xs-12">
+                                        <p>
+                                            <input type="button" value="Connectez-vous" class="btn btn_color1" onclick="location.href='@Url.Action("Login", "Communautes")'" />
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row showmore">
+                                    <p>ou</p>
+                                </div>
+                                <div class="row showmore">
+                                    <div class="col-xs-12">
+                                        <p>
+                                            <input type="button" value="Créer un compte" class="btn btn_color3" onclick="location.href='@Url.Action("CreerCompte", "Communautes")'" />
+                                        </p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="col-xs-12 col-sm-6">
+                @if (Model.LesCommentaires.Count > 0)
+                {
+                    <ul class="comments" id="listCommentaire">
+
+                        @foreach (var item in Model.LesCommentaires)
+                        {
+
+                            <li class="comment">
+                                <p class="name">@item.title<span class="note">@item.mark/5</span></p>
+                                <p class="by">par<a href="@Url.Action("Details", "Communautes", new { id = item.communauteId })"> @item.communaute.firstname</a></p>
+                                <p class="text">@item.comment</p>
+                            </li>
+                        }
+                    </ul>
+
+                    if (Model.LesCommentaires.Count > 3)
+                    {
+                        <div class="row showmore">
+                            <div class="col-xs-12">
+                                <button type="button" class="btn btn_grey" id="btnListCommentaire"><span class="glyphicon glyphicon-chevron-down"></span>Afficher d'avantage</button>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="result">
+                        <div class="recettes row">
+
+                            <p class="col-xs-12 blank">Aucun commentaire pour cette recette</p>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(function () {
+        $("#addComment").click(function () {
+            var url = "/CommunautesRecettes/Commentaire/";
+            $.ajax({
+                data: $("#formCreateCommentaire").serialize(),
+                url: url,
+                type: "POST",
+                success: function (data) {
+                    if (data.success != null && data.success) {
+                        if (data.responseText != null && data.responseText) {
+                            alert(data.responseText);
+                        }
+                        location.reload();
+                    }
+                    else {
+                        if (data.responseText != null && data.responseText) {
+                            alert(data.responseText);
+                        }
+                    }
+                },
+                error: function (reponse) {
+                    alert(reponse);
+                }
+            });
+        });
+
+        $("#btnListCommentaire").click(function () {
+            ShowList();
+        });
+
+        function ShowList() {
+            var showMe = 0;
+            var viewNext = false;
+            $("#listCommentaire li").each(function (id, element) {
+                if ($(this).is(":visible")) {
+                    $(this).hide();
+                    viewNext = true;
+                }
+                else {
+                    if (showMe < 3 && viewNext) {
+                        $(this).show();
+                        showMe++;
+                    }
+                    else {
+                        $(this).hide();
+                    }
+                }
+            });
+
+            if ($("#listCommentaire li:visible").size() == 0) {
+                $("#listCommentaire li:lt(3)").show();
+            }
+        }
+        ShowList();
+
+
+    });
+</script> 

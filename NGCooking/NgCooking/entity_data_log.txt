@@ -1,0 +1,3 @@
+Entity of type "Recette" in state "Added" has the following validation errors:
+- Property: "name", Error: "Le champ name est requis."
+- Property: "comments", Error: "Le champ comments est requis."

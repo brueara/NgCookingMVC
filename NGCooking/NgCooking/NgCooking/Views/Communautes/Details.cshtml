@@ -1,0 +1,61 @@
+﻿@model NgCooking.ViewModels.FicheChefViewModel
+
+@{
+    string userName = HttpContext.Current.User.Identity.Name;
+    ViewBag.Title = "Détails du chef";
+}
+
+<div class="content" id="content_communaute_details">
+
+    <section class="section details">
+        <div class="row">
+            <div class="col-vxs-12 col-xs-6 col-sm-5">
+                <div class="avatar-wrap">
+                    <img class="avatar" src="~/Resources/users/@Model.Chef.picture" alt="@Model.Chef.firstname @Model.Chef.surname">
+                </div>
+            </div>
+            <div class="col-vxs-12 col-xs-6 col-sm-7">
+                <div class="infos">
+                    <h1 class="name">@Model.Chef.firstname @Model.Chef.surname</h1>
+                    <p class="level">
+                        <span class="stars">
+                            @for (int i = 0; i < Model.Chef.level; i++)
+                            {
+                                <span class="glyphicon glyphicon-star"></span>
+
+                            }
+                        </span>
+                        <span class="status">@ViewBag.Niveau</span>
+                    </p>
+                    <p class="city"><span class="fwb">Ville : </span>@Model.Chef.city</p>
+                    <p class="age"><span class="fwb">Age : </span>@ViewBag.Age ans</p>
+                    <p class="shared"><span class="fwb">@Model.Chef.firstname</span> a partagé <span class="nb">@Model.RecetteDuChef.Count recettes</span></p>
+                    <p class="bio"><span class="fwb">BIO : </span>@Model.Chef.bio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    @if (userName != null && userName.Trim() != "" && userName == Model.Chef.id.ToString())
+    {
+             @Html.Partial("_NewRecette")
+    }
+    <section class="section">
+        @if (Model.RecetteDuChef.Count > 0)
+        {
+            <h2 class="title">~ Les recettes de @Model.Chef.firstname ~</h2>
+        }
+        else
+        {
+            <h2 class="title">~ @Model.Chef.firstname n'a pas encore inscrit de recette ~</h2>
+        }
+        <div class="recettes row">
+            @{
+                foreach (var recette in Model.RecetteDuChef)
+                {
+                    @Html.Action("Vignette", "Recettes", new { recette = recette })
+                }
+            }
+        </div>
+    </section>
+
+</div>

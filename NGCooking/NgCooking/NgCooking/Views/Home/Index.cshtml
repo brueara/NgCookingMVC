@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Home Sweet Home";
+}
+
+<div class="content" id="content_home">
+
+    <h1 class="page-title">Bienvenue sur NgCooking !</h1>
+    @Html.Action("BandeauRecettes","Recettes", new { titre = "Meilleures recettes"  })
+    @Html.Partial("_NewRecette")
+    @Html.Action("BandeauRecettes", "Recettes", new { titre = "Nouvelles recettes", col = "creation" })
+</div>

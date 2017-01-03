@@ -1,0 +1,18 @@
+﻿<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href=@Url.Action("Index", "Home") class="logo">
+                    <img src=@Url.Content("~/Resources/logo_header.png") alt="">
+                </a>
+                <div class="desc">
+                    <p>Partagez vos meilleures recettes avec<br /> la communauté NgCooking</p>
+                    <p><a class="link" href="@Url.Action("Index", "Recettes")"><strong>@ViewBag.CompteRecette recettes</strong> à découvrir !</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" id="mobile-menu-btn">
+        <i class="glyphicon glyphicon-menu-hamburger"></i>
+    </button>
+</header>

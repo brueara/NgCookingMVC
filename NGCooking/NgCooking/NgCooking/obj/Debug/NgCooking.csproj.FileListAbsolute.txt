@@ -1,0 +1,182 @@
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\csc.exe
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\vbc.exe
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\VBCSCompiler.exe
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\NgCooking.dll.config
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\NgCooking.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\NgCooking.pdb
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\Antlr3.Runtime.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\EntityFramework.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\EntityFramework.SqlServer.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\Newtonsoft.Json.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.Helpers.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.Mvc.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.Optimization.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.Razor.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.WebPages.Deployment.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.WebPages.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.WebPages.Razor.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\WebGrease.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\EntityFramework.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\EntityFramework.SqlServer.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.Helpers.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.Mvc.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.Optimization.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.Razor.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.WebPages.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.WebPages.Deployment.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\System.Web.WebPages.Razor.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\Antlr3.Runtime.pdb
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\Newtonsoft.Json.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\fr\System.Web.Razor.resources.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.csprojResolveAssemblyReference.cache
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.pdb
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.Properties.Resources.resources
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.csproj.GenerateResource.Cache
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\PagedList.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\PagedList.Mvc.dll
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\PagedList.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\PagedList.Mvc.xml
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.Migrations.FristMigr.resources
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.Migrations.FristMigr1.resources
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.Migrations.SeceondMigr.resources
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\obj\Debug\NgCooking.Migrations.UpdateLevelUser.resources
+C:\Users\C17 Developer\Documents\NgCookingSelfAuth\NgCooking\NgCooking\bin\BeginCollectionItem.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\csc.exe
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\vbc.exe
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\VBCSCompiler.exe
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\NgCooking.dll.config
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\NgCooking.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\NgCooking.pdb
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\Antlr3.Runtime.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\BeginCollectionItem.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\EntityFramework.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\EntityFramework.SqlServer.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\Newtonsoft.Json.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\PagedList.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\PagedList.Mvc.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Helpers.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Mvc.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Optimization.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Razor.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.Razor.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\WebGrease.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\EntityFramework.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\EntityFramework.SqlServer.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\PagedList.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\PagedList.Mvc.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Helpers.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Mvc.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Optimization.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Razor.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\Antlr3.Runtime.pdb
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\Newtonsoft.Json.xml
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.Razor.resources.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.csprojResolveAssemblyReference.cache
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.Properties.Resources.resources
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.csproj.GenerateResource.Cache
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.dll
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.pdb
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\csc.exe
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\vbc.exe
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\VBCSCompiler.exe
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\NgCooking.dll.config
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\NgCooking.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\NgCooking.pdb
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\Antlr3.Runtime.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\BeginCollectionItem.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\EntityFramework.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\EntityFramework.SqlServer.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\Newtonsoft.Json.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\PagedList.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\PagedList.Mvc.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Helpers.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Mvc.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Optimization.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Razor.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.Deployment.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.Razor.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\WebGrease.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\EntityFramework.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\EntityFramework.SqlServer.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\PagedList.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\PagedList.Mvc.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Helpers.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Mvc.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Optimization.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.Razor.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.Deployment.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\System.Web.WebPages.Razor.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\Antlr3.Runtime.pdb
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\Newtonsoft.Json.xml
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.Razor.resources.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.csprojResolveAssemblyReference.cache
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.Properties.Resources.resources
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.csproj.GenerateResource.Cache
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.dll
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.pdb
+C:\Users\Bruno\OneDrive\Documents\Visual Studio 2015\Projects\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.Migrations.FirstMigr.resources
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.Migrations.FirstMigr.resources
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.Migrations.SecondMigr.resources
+C:\Users\C17 Developer\Documents\TFS\NGCooking\NGCooking\NgCooking\NgCooking\obj\Debug\NgCooking.Migrations.ThirdMigr.resources

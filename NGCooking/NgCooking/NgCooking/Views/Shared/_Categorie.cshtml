@@ -1,0 +1,12 @@
+﻿@model NgCooking.Models.Categorie
+
+@using (Html.BeginCollectionItem("Categories"))
+{
+    
+        @Html.HiddenFor(model => model.id)
+
+            @Html.LabelFor(model => model.nameToDisplay, htmlAttributes: new { @class = "control-label col-md-2" })
+                @Html.EditorFor(model => model.nameToDisplay, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.nameToDisplay, "", new { @class = "text-danger" })
+}
+

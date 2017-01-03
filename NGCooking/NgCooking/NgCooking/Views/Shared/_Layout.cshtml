@@ -1,0 +1,86 @@
+﻿@{
+    string controlName = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    string userName = HttpContext.Current.User.Identity.Name;
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @if (ViewBag.Title != null && ViewBag.Title != "")
+    {
+    <title>@ViewBag.Title - NgCooking</title>
+    }
+    else
+    {
+        <title>NgCooking</title>
+    }
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />*@
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+    @*<script src="~/Scripts/modernizr-2.6.2.js"></script>*@
+</head>
+<body>
+
+    <div id="wrapper">
+        @Html.Action("HeaderRecette", "Recettes")
+
+
+        <main id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3" id="col-nav">
+                        <button type="button" id="mobile-close-btn">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                        <nav id="nav">
+                            <ul class="menu">
+                                @Html.Partial("_MenuItem", new ViewDataDictionary() { { "Page", "Index" }, { "Controle", "Home" }, { "Texte", "Accueil" }, { "Classe", controlName == "Home" ? "page_hom active" : "page_hom" } })
+                                @Html.Partial("_MenuItem", new ViewDataDictionary() { { "Page", "Index" }, { "Controle", "Recettes" }, { "Texte", "Recettes" }, { "Classe", controlName == "Recettes" ? "page_rec active" : "page_rec" } })
+                                @Html.Partial("_MenuItem", new ViewDataDictionary() { { "Page", "Index" }, { "Controle", "Ingredients" }, { "Texte", "Ingredients" }, { "Classe", controlName == "Ingredients" ? "page_ing active" : "page_ing" } })
+                                @Html.Partial("_MenuItem", new ViewDataDictionary() { { "Page", "Index" }, { "Controle", "Communautes" }, { "Texte", "Communauté" }, { "Classe", controlName == "Communautes" ? "page_com active" : "page_com" } })
+                            </ul>
+                            <div class="account-area">
+                                @{
+                                    if (userName != null && userName.Trim() != "")
+                                    {
+                                        <button type="button" class="button account" onclick="location.href='@Url.Action("Profil","Communautes")'"><span class="icon"></span>Mon profil</button>
+                                        <button type="button" class="button deconnect" onclick="location.href='@Url.Action("Disconnect","Communautes")'"><span class="glyphicon glyphicon-off"></span>Deconnexion</button>
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button connect" data-popin-open="connect_popin" onclick="location.href='@Url.Action("Login","Communautes")'"><span class="icon"></span>Connexion</button>
+                                    }
+                                }
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+                        @RenderBody()
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            @*</div>*@
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="row cuisto-img-wrap">
+                    <div class="hidden-xs col-sm-3">
+                        <div class="cuisto-img"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse optio repellat temporibus molestiae ducimus quibusdam eum maiores voluptatum sapiente reprehenderit. Est, modi, tenetur. Tempora perferendis eveniet unde numquam cupiditate nam?</p>
+                        <div class="hr"></div>
+                        <p class="copyright">copyright @@ngcooking 2015-2016</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+﻿@model NgCooking.ViewModels.RecettesViewModel
+
+@{
+    ViewBag.Title = "Création d'une recette";
+}
+
+<div class="content" id="content_recettes_new">
+
+    <h1 class="page-title">Nouvelle recette</h1>
+    <div id="status-area"></div>
+    <p class="line ac">
+        <span id="SpanRecetteError" style="color:red; display:none; font-weight:bold"></span>
+    </p>
+    <section class="section">
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { name = "formCreateRecette", id = "formCreateRecette" }))
+        {
+            @Html.HiddenFor(Model => Model.NouvelleRecette.id)
+            @Html.HiddenFor(Model => Model.NouvelleRecette.calories, new { id = "totalcal" })
+            @Html.HiddenFor(Model => Model.NouvelleRecette.picture, new { id = "imgrecette" })
+            @Html.HiddenFor(Model => Model.ComposantDeLaRecette, new { id = "composant" })
+            for (int i = 0; i < Model.ListeDesCategories.Count; i++)
+            {
+                @Html.HiddenFor(Model => Model.ListeDesCategories[i].id)
+                @Html.HiddenFor(Model => Model.ListeDesCategories[i].nameToDisplay)
+            }
+            for (int i = 0; i < Model.ListeDesIngredients.Count; i++)
+            {
+                @Html.HiddenFor(Model => Model.ListeDesIngredients[i].id)
+                @Html.HiddenFor(Model => Model.ListeDesIngredients[i].name)
+            }
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="row">
+                <div class="col-xs-6">
+                    <p class="line">
+                        <label for="">Le nom de votre recette</label>
+                        @Html.TextBoxFor(model => model.NouvelleRecette.name, new { type = "text", @class = "mb0 wide" })
+                        @Html.ValidationMessageFor(model => model.NouvelleRecette.name, "", new { @class = "text-danger" })
+                    </p>
+                    <p class="line">
+                        <label for="">Préparation de votre recette</label>
+                        @Html.TextAreaFor(model => model.NouvelleRecette.preparation, new { id = "recette_desc", @class = "resizable mb0 wide" })
+                        @Html.ValidationMessageFor(model => model.NouvelleRecette.preparation, "", new { @class = "text-danger" })
+                    </p>
+                </div>
+
+                <div class="col-xs-6">
+                    <p class="line">
+                        <label for="">Photo de la recette</label>
+                        <input type="file" class="mb0" id="inputimg" name="inputimg" accept="image/jpeg" />
+                    </p>
+                    <p class="line ac">
+                        <img class="current_img" id="current_img" name="current_img" src="~/Resources/recette_placeholder.jpg" , alt="Visuel recette">
+                    </p>
+                </div>
+                <div class="col-xs-12">
+                    <div class="hr mt2 mb2"></div>
+                </div>
+                <div class="col-xs-12">
+                    <p class="line ac">
+                        <label for="">Sélectionnez tous les ingrédients de votre recette</label>
+                    </p>
+                    <p class="ac">
+                        @Html.DropDownList("listCat", new SelectList(Model.ListeDesCategories, "Id", "NameToDisplay"), new { name = "listCat", id = "listCat" })
+                        <span class="span-label" id="arrowRight" name="arrowRight"><span class="glyphicon glyphicon-menu-right nm"></span></span>
+                        @Html.DropDownList("listIng", new SelectList(Model.ListeDesIngredients, "Id", "Name"), new { name = "listIng", id = "listIng" })
+                        <button type="button" class="btn btn_color3" id="btnAddIng" name="btnAddIng"><span class="glyphicon glyphicon-plus"></span></button>
+                    </p>
+                    <div class="ingredients_list">
+                        <p class="line ac">
+                            <span id="SpanIngredientError" style="color:red; display:none; font-weight:bold"></span>
+                        </p>
+                        <ul class="list ac" id="listElement">
+                            @{
+                                if (Model.NouvelleRecette != null && Model.NouvelleRecette.ingredientRecettes != null)
+                                {
+                                    foreach (var el in Model.NouvelleRecette.ingredientRecettes)
+                                    {
+                                        if (el != null)
+                                        {
+                                            var img = el.ingredientId + ".jpg";
+                                            var idimg = el.ingredientId + "_img";
+                                            <li class="item">
+                                                <img class="item-img" src="~/Resources/ingredients/@img" alt="@el.ingredientId" id="@idimg">
+                                                <p class="item-name" title="@el.ingredientId">@el.ingredient.name</p>
+                                                <button type="button" class="remove_ingredient"><span class="glyphicon glyphicon-remove"></span></button>
+                                            </li>
+                                        }
+                                    }
+                                }
+                            }
+                        </ul>
+                    </div>
+                    <div class="ac">
+                        <p class="recette_total_calories">
+                            <span class="tit">Valeur calorique <span class="mass">(100g)</span> : </span><span class="val" id="nbrecal">0</span><span class="val unit">kcal</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="hr mb2"></div>
+                </div>
+                <div class="col-xs-12 ac">
+                    <button type="button" class="btn btn_color3 recette_save" id="save_recette"><span class="glyphicon glyphicon-ok mr0"></span><span>Valider ma recette</span></button>
+                </div>
+
+                <!-- Afficher au clic sur "valider ma recette" lorsque tout s'est bien déroulé -->
+                <div class="col-xs-12" id="createSuccess" name="createSuccess" style="display : none">
+                    <p class="ac mt2 tb">
+                        <span class="glyphicon glyphicon-thumbs-up color3"></span>
+                        <span>Votre recette a bien été ajoutée !</span>
+                    </p>
+
+                </div>
+
+                <!-- Afficher au clic sur "valider ma recette" si certains éléments sont manquants -->
+                <div class="col-xs-12" id="createError" name="createError" style="display : none">
+                    <p class="ac mt2 tb">
+                        <span class="glyphicon glyphicon-exclamation-sign color2"></span>
+                        <span>Woops ! Votre recette est super foireuse</span>
+                        <span id="msg_erreur"></span>
+                    </p>
+                    <p class="ac">Vous avez dû oublier quelque chose...</p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="ac mt2 tb">
+                        <a class="btn btn_color1" href="@Url.Action("Profil", "Communautes")"><span class="glyphicon glyphicon-cutlery"></span><span>Mes recettes</span></a>
+                    </p>
+                </div>
+            </div>
+                                }
+    </section>
+</div>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(function () {
+
+        $("#inputimg").change(function () {
+            var data = new FormData();
+            var files = $("#inputimg").get(0).files;
+            if (files.length > 0 && files[0].name.substring(files[0].name.lastIndexOf('.')+1).toLowerCase() == "jpg") {
+                data.append("MyImages", files[0]);
+
+                $.ajax({
+                    url: "/Recettes/UploadImg/",
+                    type: "POST",
+                    processData: false,
+                    contentType: false,
+                    data: data,
+                    success: function (response) {
+                        $("#imgrecette").val('/Resources/temp/' + response);
+                        $("#current_img").attr('src', '/Resources/temp/' + response);
+                    },
+                    error: function (er) {
+                        alert(er);
+                    }
+
+                });
+            }
+        });
+
+        $("#listCat").change(function () {
+            var lstcatval = $('#listCat option:selected').val();
+            ChangeIngredient(lstcatval);
+        });
+
+        function ChangeIngredient(_idCat) {
+            var procemessage = "<option value='0'> En attente...</option>";
+            $("#listIng").html(procemessage).show();
+            var url = "/Recettes/ObtenirCatIng/";
+            $("#btnAddIng").hide();
+
+            $.ajax({
+                url: url,
+                data: { idCat: _idCat },
+                cache: false,
+                type: "POST",
+                success: function (data) {
+                    if (data.length > 0) {
+                        var markup;
+                        for (var x = 0; x < data.length; x++) {
+                            markup += "<option value=" + data[x].Value + ">" + data[x].Text + "</option>";
+                        }
+                        $("#listIng").html(markup).show();
+                        $("#btnAddIng").show();
+                        $("#arrowRight").show();
+                    }
+                    else {
+                        $("#listIng").hide();
+                        $("#arrowRight").hide();
+                    }
+                },
+                error: function (reponse) {
+                    alert("error : " + reponse);
+                }
+            });
+
+        }
+
+        $("#btnAddIng").click(function () {
+            var ingAdd = $('#listIng option:selected').val();
+            var ingAddtxt = $('#listIng option:selected').text().toLowerCase();
+            if ($("#listElement li").length < 10) {
+                if ($('#' + ingAdd).length) {
+                    MessageAlerte("L'ingredient " + ingAddtxt + " est déjà dans la liste.", "Ingredient");
+                }
+                else {
+                    var idimg = ingAdd + "_img"
+                    $("#listElement").append("<li class='item' id='" + ingAdd + "'><img class='item-img' alt='" + ingAdd + "' id='" + idimg + "'><p class='item-name' title='" + ingAdd + "'>" + ingAddtxt + '</p><button type="button" class="remove_ingredient" ><span class="glyphicon glyphicon-remove"></span></button></li>');
+                    $("#" + idimg).attr("src", "/Resources/ingredients/" + ingAdd + ".jpg");
+                    CalculCalori();
+                }
+            }
+            else {
+                MessageAlerte("Pas plus de dix ingredients par recette.", "Ingredient");
+            }
+
+        })
+        $('#listElement').delegate('li', 'click', function () {
+            $(this).closest('li').remove();
+            CalculCalori();
+            
+        });
+
+        function MessageAlerte(msg, span) {
+            $("#Span" + span + "Error").text(msg);
+            $("#Span" + span + "Error").fadeIn('slow').delay(2000).fadeOut('slow');
+        };
+
+        function CalculCalori() {
+            var listId = [];
+            $("#listElement li").each(function (id, element) {
+                listId.push(element.id);
+            });
+
+            if (listId.length > 0) {
+                var url = "/Recettes/ObtenirNbreCal/";
+                $.ajax({
+                    url: url,
+                    data: { ids: listId },
+                    cache: false,
+                    type: "POST",
+                    success: function (data) {
+                        if (data > 0) {
+                            $("#nbrecal").text(data);
+                            $("#totalcal").val(data);
+                        }
+                        else {
+                            $("#nbrecal").text("0");
+                        }
+                    },
+                    error: function (reponse) {
+                        MessageAlerte("Le calcul calorifique à échoué", "Ingredient");
+                    }
+                });
+            }
+            else {
+                $("#nbrecal").text("0");
+            }
+        }
+
+        $("#save_recette").click(function () {
+            if ($("#listElement li").length < 3) {
+                MessageAlerte("Il n'y a pas assé d'ingredients dans votre recette.", "Recette");
+            }
+            else {
+                $("#composant").val('');
+                $("#listElement li").each(function (id, element) {
+                    $("#composant").val($("#composant").val() + element.id + ";");
+                });
+                var url = "/Recettes/Create/";
+
+                $.ajax({
+                    url: url,
+                    data: $("#formCreateRecette").serialize(),
+                    type: "POST",
+                    success: function (data) {
+                        if (data.success != null && data.success)
+                        {
+                            $("#createSuccess").fadeIn('slow').delay(2000).fadeOut('slow', function () { location.reload(); });
+                        }
+                        else 
+                        {
+                            $("#createError").fadeIn('slow').delay(2000).fadeOut('slow');
+                            if (data.responseText != null && data.responseText) {
+                                alert(data.responseText);
+                            }
+                        }       
+                    },
+                    error: function (reponse) {
+                        $("#msg_erreur").text(reponse);
+                        $("#createError").fadeIn('slow').delay(2000).fadeOut('slow');
+                    }
+                });
+            }
+        });
+
+
+    });
+</script>

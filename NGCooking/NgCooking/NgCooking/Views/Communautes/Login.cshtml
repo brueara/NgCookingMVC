@@ -1,0 +1,66 @@
+﻿@model NgCooking.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Qui es-tu ?";
+}
+
+<div class="content" id="content_login">
+    <h1 class="page-title">La communauté</h1>
+    <section class="section">
+        <h1 class="title">~ Login ~</h1>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel">
+                    <div class="row imgback">
+                        <div class="hidden-xs col-sm-3"></div>
+                        <div class="col-xs-12 col-sm-9 fp">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+
+
+                                <div class="filters">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="filter">
+                                        <p>
+                                            @Html.LabelFor(model => model.email, htmlAttributes: new { @class = "" })
+                                        </p>
+                                        <p>
+                                            @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                        </p>
+                                    </div>
+
+                                    <div class="filter">
+                                        <p>
+                                            @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "" })
+                                        </p>
+                                        <p>
+                                            @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row showmore">
+                                    <div class="col-xs-12">
+                                        <p>
+                                            <input type="submit" class="btn btn_color1" value="Login" />
+                                        </p>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row showmore">
+            <div class="col-xs-12">
+                <p>
+                    <input type="button" value="Créer un compte" class="btn btn_color3" onclick="location.href='@Url.Action("CreerCompte", "Communautes")'" />
+                </p>
+            </div>
+        </div>
+    </section>
+</div>

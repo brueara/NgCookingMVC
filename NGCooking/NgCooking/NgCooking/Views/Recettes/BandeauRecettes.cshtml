@@ -1,0 +1,13 @@
+﻿@model IEnumerable<NgCooking.Models.Recette>
+
+<section class="section">
+    <h2 class="title">~ @ViewData["Title"].ToString() ~</h2>
+    <div class="recettes row">
+       @foreach (var item in Model)
+        {
+        @Html.Action("Vignette", "Recettes", new { recette = item });
+
+        }
+    </div>
+</section>
+
